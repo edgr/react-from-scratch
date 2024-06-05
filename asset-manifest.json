@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-from-scratch/static/css/main.f855e6bc.css",
+    "main.js": "/react-from-scratch/static/js/main.35f00931.js",
+    "static/js/453.817241d8.chunk.js": "/react-from-scratch/static/js/453.817241d8.chunk.js",
+    "static/media/logo.svg": "/react-from-scratch/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-from-scratch/index.html",
+    "main.f855e6bc.css.map": "/react-from-scratch/static/css/main.f855e6bc.css.map",
+    "main.35f00931.js.map": "/react-from-scratch/static/js/main.35f00931.js.map",
+    "453.817241d8.chunk.js.map": "/react-from-scratch/static/js/453.817241d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.35f00931.js"
+  ]
+}
