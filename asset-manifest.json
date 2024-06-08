@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-from-scratch/static/css/main.964fdded.css",
-    "main.js": "/react-from-scratch/static/js/main.0ea48266.js",
-    "static/js/453.817241d8.chunk.js": "/react-from-scratch/static/js/453.817241d8.chunk.js",
+    "main.js": "/react-from-scratch/static/js/main.89d0fd3c.js",
+    "static/js/453.7abbb238.chunk.js": "/react-from-scratch/static/js/453.7abbb238.chunk.js",
     "index.html": "/react-from-scratch/index.html",
     "main.964fdded.css.map": "/react-from-scratch/static/css/main.964fdded.css.map",
-    "main.0ea48266.js.map": "/react-from-scratch/static/js/main.0ea48266.js.map",
-    "453.817241d8.chunk.js.map": "/react-from-scratch/static/js/453.817241d8.chunk.js.map"
+    "main.89d0fd3c.js.map": "/react-from-scratch/static/js/main.89d0fd3c.js.map",
+    "453.7abbb238.chunk.js.map": "/react-from-scratch/static/js/453.7abbb238.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.964fdded.css",
-    "static/js/main.0ea48266.js"
+    "static/js/main.89d0fd3c.js"
   ]
 }
