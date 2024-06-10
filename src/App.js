@@ -1,41 +1,39 @@
-import "./App.css";
 import React, { useEffect } from "react";
-import styled from "@emotion/styled";
-import PokemonInfo from "./components/PokemonInfo";
+import "./App.css";
 import PokemonTable from "./components/PokemonTable";
 import PokemonSearch from "./components/PokemonSearch";
 import PokemonContext from "./PokemonContext";
-
-const Title = styled.h1`
-  text-align: center;
-`;
+import pokemonReducer from "./PokemonReducer";
+import { Typography } from "@mui/material";
 
 function App() {
-  const [search, setSearch] = React.useState("");
-  const [selected, setSelected] = React.useState(null);
-  const [pokemons, setPokemons] = React.useState([]);
+  const [state, dispatch] = React.useReducer(pokemonReducer, {
+    search: "",
+    selected: null,
+    pokemons: [],
+  });
 
   useEffect(() => {
     fetch(process.env.REACT_APP_FETCH_URL)
       .then((response) => response.json())
-      .then((data) => setPokemons(data));
+      .then((data) =>
+        dispatch({
+          type: "SET_POKEMONS",
+          payload: data,
+        })
+      );
   }, []);
 
   return (
     <PokemonContext.Provider
       value={{
-        search,
-        setSearch,
-        selected,
-        setSelected,
-        pokemons,
-        setPokemons,
+        state,
+        dispatch,
       }}
     >
       <div className="App">
-        <Title>Pokemons!</Title>
+        <Typography variant="h1">Pokemons!</Typography>
         <PokemonSearch />
-        <PokemonInfo />
         <PokemonTable />
       </div>
     </PokemonContext.Provider>
